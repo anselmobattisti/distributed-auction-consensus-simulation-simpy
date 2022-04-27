@@ -1,0 +1,27 @@
+simulation:
+  seed: 1
+  duration: 1000
+  bid_increment: 1
+agents:
+  ag_1:
+    cpu: 100
+    cost: 1
+  ag_2:
+    cpu: 150
+    cost: 2
+  ag_3:
+    cpu: 500
+    cost: 1
+  ag_4:
+    cpu: 400
+    cost: 3
+topology:
+  n_1:
+    - "ag_1"
+    - "ag_2"
+  n_2:
+    - "ag_1"
+    - "ag_3"
+  n_3:
+    - "ag_2"
+    - "ag_4"
